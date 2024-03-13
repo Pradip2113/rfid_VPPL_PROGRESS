@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{reader_name}-{transporter_name}",
+ "creation": "2023-08-01 11:16:59.702441",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reader_name",
+  "start_reading",
+  "column_break_8x9re",
+  "username",
+  "section_break_x75pg",
+  "token_number",
+  "column_break_egqtf",
+  "transportar",
+  "transporter_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "reader_name",
+   "fieldtype": "Select",
+   "label": "Reader Name",
+   "options": "\nRFID 1\nRFID 2\nRFID 3"
+  },
+  {
+   "fieldname": "start_reading",
+   "fieldtype": "Button",
+   "label": "Start Reading"
+  },
+  {
+   "fieldname": "column_break_8x9re",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "section_break_x75pg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "token_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Token Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_egqtf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transportar",
+   "fieldtype": "Link",
+   "label": "Transportar",
+   "options": "H and T Contract",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "transportar.transporter_name",
+   "fieldname": "transporter_name",
+   "fieldtype": "Data",
+   "label": "Transporter Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-03 19:15:07.172591",
+ "modified_by": "Administrator",
+ "module": "RFID",
+ "name": "Tag Reader",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
